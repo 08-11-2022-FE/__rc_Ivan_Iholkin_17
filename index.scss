@@ -1,0 +1,188 @@
+.header{
+    text-align: center;
+    margin-bottom: 40px;
+    p{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #898F8F;
+    }
+    h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: #FFCC00;
+    }
+    .hr{
+        border: 1px solid #FFCC00;
+        width: 210px;
+        height: 0px;
+    }
+    .decorathion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
+.content{
+    display: flex;
+    gap: 85px;
+    flex-wrap: nowrap;
+    // padding-left: 70px;
+    // padding-right: 205px;
+    align-items: center;
+    // width: 1170px;
+    box-sizing:border-box;
+    justify-content: center;
+
+    .left{
+        position: relative;
+        width: 400px;
+        height: 400px;
+   
+        .left_border{
+            position: absolute;
+            border-top: #FFCC00 1px solid;
+            border-left: #FFCC00 1px solid;
+            left: -15px;
+            top: -15px;
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+        }
+        .right_border{
+            position: absolute;
+            border-top: #FFCC00 1px solid;
+            border-right: #FFCC00 1px solid;
+            right: -15px;
+            top: -15px;
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+        }
+        .rightbottom_border{
+            position: absolute;
+            border-bottom: #FFCC00 1px solid;
+            border-right: #FFCC00 1px solid;
+            right: -15px;
+            bottom: -15px;
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+        }
+
+        .leftbottom_border{
+            position: absolute;
+            border-bottom: #FFCC00 1px solid;
+            border-left: #FFCC00 1px solid;
+            left: -15px;
+            bottom: -15px;
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+        }
+    }
+    .middle{
+        height: 560px;
+        border: 1px solid #FFCC00;
+    }
+    .right{
+        text-align: center;
+
+        h2{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+        .hr_afterh2{
+            width: 100px;
+            border: 1px solid #FFCC00;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        h3{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #666666;
+            margin-bottom: 30px;
+        }
+        .social{
+            margin-bottom: 49px;
+        }
+        p{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+            width: 430px;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #666666;
+            border: 1px solid #FFCC00;
+            width: 118px;
+            height: 24px;
+        }
+        .under_but{
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 5px;
+            justify-content: center;
+            margin-bottom: 30px;
+            .under_but1{
+                width: 10px;
+                height: 4px;
+                background: #FFCC00;
+            }
+            .under_but2{
+                width: 20px;
+                height: 4px;
+                background: #FFCC00;
+            }
+        }
+    }
+}
+
+   
+    body{
+        padding: 121px 135px 122px 135px;
+   
+    }
+
+    @media only screen and (max-width: 768px){
+        .content{
+            flex-direction: column;
+            .middle{
+                display: none;
+            }
+        }
+    }
