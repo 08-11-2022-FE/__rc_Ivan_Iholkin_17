@@ -47,43 +47,43 @@
 }
 .content .left .left_border {
   position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
   border-top: #FFCC00 1px solid;
   border-left: #FFCC00 1px solid;
   left: -15px;
   top: -15px;
-  width: 100px;
-  height: 100px;
-  z-index: -1;
 }
 .content .left .right_border {
   position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
   border-top: #FFCC00 1px solid;
   border-right: #FFCC00 1px solid;
   right: -15px;
   top: -15px;
-  width: 100px;
-  height: 100px;
-  z-index: -1;
 }
 .content .left .rightbottom_border {
   position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
   border-bottom: #FFCC00 1px solid;
   border-right: #FFCC00 1px solid;
   right: -15px;
   bottom: -15px;
-  width: 100px;
-  height: 100px;
-  z-index: -1;
 }
 .content .left .leftbottom_border {
   position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
   border-bottom: #FFCC00 1px solid;
   border-left: #FFCC00 1px solid;
   left: -15px;
   bottom: -15px;
-  width: 100px;
-  height: 100px;
-  z-index: -1;
 }
 .content .middle {
   height: 560px;
@@ -165,8 +165,10 @@
   background: #FFCC00;
 }
 
-body {
+.form {
   padding: 121px 135px 122px 135px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 768px) {
