@@ -1,0 +1,184 @@
+
+$decor-color:#FFCC00;
+@mixin text-format {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+@mixin text-format2 {
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+@mixin border-deco {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 40px;
+    p{
+        @include text-format2;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #898F8F;
+    }
+    h1{
+        @include text-format;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: $decor-color;
+    }
+    .hr{
+        border: 1px solid $decor-color;
+        width: 210px;
+        height: 0px;
+    }
+    .decorathion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
+.content{
+    display: flex;
+    gap: 85px;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing:border-box;
+    justify-content: flex-end;
+    margin: 0 auto 122px auto;
+    max-width: 1030px;
+
+    .left{
+        position: relative;
+        width: 400px;
+        height: 400px;
+   
+        .left_border{
+            @include border-deco;
+            border-top: $decor-color 1px solid;
+            border-left: $decor-color 1px solid;
+            left: -15px;
+            top: -15px; 
+        }
+        .right_border{
+            @include border-deco;
+            border-top: $decor-color 1px solid;
+            border-right: $decor-color 1px solid;
+            right: -15px;
+            top: -15px;
+        }
+        .rightbottom_border{
+            @include border-deco;
+            border-bottom: $decor-color 1px solid;
+            border-right: $decor-color 1px solid;
+            right: -15px;
+            bottom: -15px;
+        }
+
+        .leftbottom_border{
+            @include border-deco;
+            border-bottom: $decor-color 1px solid;
+            border-left: $decor-color 1px solid;
+            left: -15px;
+            bottom: -15px;
+        }
+    }
+    .middle{
+        height: 560px;
+        border: 1px solid $decor-color;
+    }
+    .right{
+        text-align: center;
+
+        h2{
+            @include text-format;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+        .hr_afterh2{
+            width: 100px;
+            border: 1px solid $decor-color;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        h3{
+            @include text-format2;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #666666;
+            margin-bottom: 30px;
+        }
+        .social{
+            margin-bottom: 49px;
+        }
+        p{
+            @include text-format2;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+            width: 430px;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #666666;
+            border: 1px solid $decor-color;
+            width: 118px;
+            height: 24px;
+        }
+        .under_but{
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 5px;
+            justify-content: center;
+            margin-bottom: 30px;
+            .under_but1{
+                width: 10px;
+                height: 4px;
+                background: $decor-color;
+            }
+            .under_but2{
+                width: 20px;
+                height: 4px;
+                background: $decor-color;
+            }
+        }
+    }
+}
+
+ 
+
+    @media only screen and (max-width: 768px){
+        .content{
+            flex-direction: column;
+            .middle{
+                display: none;
+            }
+        }
+    }

@@ -1,0 +1,179 @@
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #898F8F;
+}
+.header h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #FFCC00;
+}
+.header .hr {
+  border: 1px solid #FFCC00;
+  width: 210px;
+  height: 0px;
+}
+.header .decorathion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.content {
+  display: flex;
+  gap: 85px;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  margin: 0 auto 122px auto;
+  max-width: 1030px;
+}
+.content .left {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.content .left .left_border {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  border-top: #FFCC00 1px solid;
+  border-left: #FFCC00 1px solid;
+  left: -15px;
+  top: -15px;
+}
+.content .left .right_border {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  border-top: #FFCC00 1px solid;
+  border-right: #FFCC00 1px solid;
+  right: -15px;
+  top: -15px;
+}
+.content .left .rightbottom_border {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  border-bottom: #FFCC00 1px solid;
+  border-right: #FFCC00 1px solid;
+  right: -15px;
+  bottom: -15px;
+}
+.content .left .leftbottom_border {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  border-bottom: #FFCC00 1px solid;
+  border-left: #FFCC00 1px solid;
+  left: -15px;
+  bottom: -15px;
+}
+.content .middle {
+  height: 560px;
+  border: 1px solid #FFCC00;
+}
+.content .right {
+  text-align: center;
+}
+.content .right h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.content .right .hr_afterh2 {
+  width: 100px;
+  border: 1px solid #FFCC00;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.content .right h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.content .right .social {
+  margin-bottom: 49px;
+}
+.content .right p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+  width: 430px;
+}
+.content .right a {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #666666;
+  border: 1px solid #FFCC00;
+  width: 118px;
+  height: 24px;
+}
+.content .right .under_but {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.content .right .under_but .under_but1 {
+  width: 10px;
+  height: 4px;
+  background: #FFCC00;
+}
+.content .right .under_but .under_but2 {
+  width: 20px;
+  height: 4px;
+  background: #FFCC00;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .middle {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
